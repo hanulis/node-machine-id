@@ -31,8 +31,8 @@
 	"scripts": {
 		"build": "tsc",
 		"prepublish": "npm run test",
-		"lint": "npm bin && eslint -c .eslintrc ./src",
-		"test": "npm bin && mocha --compilers js:babel-core/register ./tests"
+		"lint": "eslint -c .eslintrc ./src",
+		"test": "mocha --compilers js:babel-core/register ./tests"
 	},
 	"devDependencies": {
 		"@types/node": "^16.0.1",
